@@ -6,7 +6,7 @@
 
 <title>Minecassia Network | Competitive Minecraft Survival Server</title>
 
-<meta name="description" content="Minecassia Network is a competitive Minecraft survival server with land claiming, economy, PVP and cross play support. Join today.">
+<meta name="description" content="Minecassia Network is a competitive Minecraft survival server with land claiming, economy, PVP and crossplay support. Java and Bedrock players can join.">
 <meta name="keywords" content="Minecraft server, Minecraft survival server, competitive survival, Minecraft PVP server, Java Bedrock crossplay server, Minecassia">
 <meta name="author" content="Minecassia Network">
 <meta name="robots" content="index, follow">
@@ -15,8 +15,7 @@
 <link rel="canonical" href="https://minecassia.qzz.io/">
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+<link rel="icon" href="/logo.png" type="image/png">
 <link rel="apple-touch-icon" href="/logo.png">
 
 <!-- Open Graph -->
@@ -32,9 +31,175 @@
 <meta name="twitter:description" content="Competitive Minecraft Survival Server">
 <meta name="twitter:image" content="https://minecassia.qzz.io/logo.png">
 
-<!-- Structured Data with Logo -->
+<!-- Organization Schema (For Google Logo + Discord) -->
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Minecassia Network",
+  "url": "https://minecassia.qzz.io/",
+  "logo": "https://minecassia.qzz.io/logo.png",
+  "sameAs": [
+    "https://discord.gg/K8AvCY45fS"
+  ]
+}
+</script>
+
+<!-- Website Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Minecassia Network",
+  "url": "https://minecassia.qzz.io/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://minecassia.qzz.io/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- Game Server Schema (For SEO Rich Results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GameServer",
+  "name": "Minecassia Network",
+  "game": "Minecraft",
+  "url": "https://minecassia.qzz.io/",
+  "serverStatus": "Online",
+  "description": "Competitive Minecraft survival server with economy, land claiming, PVP and crossplay support.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "Global"
+  },
+  "sameAs": [
+    "https://discord.gg/K8AvCY45fS"
+  ],
+  "connectAction": {
+    "@type": "EntryPoint",
+    "urlTemplate": "minecraft://minecassia.qzz.io:19132"
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Orbitron',sans-serif;}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#2a004f,#4b0082,#6a0dad,#8a2be2);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+backdrop-filter:blur(15px);
+background:rgba(0,0,0,0.4);
+padding:50px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(138,43,226,0.6);
+animation:fadeIn 1.5s ease;
+max-width:600px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.logo{
+width:150px;
+margin-bottom:20px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+background:linear-gradient(90deg,#fff,#d8b4ff,#fff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+p{
+font-size:18px;
+opacity:0.9;
+margin-bottom:25px;
+}
+
+.buttons a{
+display:inline-block;
+margin:10px;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+font-size:16px;
+transition:0.3s;
+background:#8a2be2;
+color:white;
+box-shadow:0 0 20px rgba(138,43,226,0.7);
+}
+
+.buttons a:hover{
+background:#a855f7;
+box-shadow:0 0 30px rgba(168,85,247,1);
+transform:scale(1.1);
+}
+
+.ip-box{
+margin-top:20px;
+padding:10px 20px;
+border:1px solid rgba(255,255,255,0.3);
+border-radius:10px;
+font-size:16px;
+background:rgba(255,255,255,0.05);
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<img src="logo.png" class="logo" alt="Minecassia Network Logo">
+<h1>MINECASSIA NETWORK</h1>
+<p>Competitive Survival Experience</p>
+
+<div class="buttons">
+<a href="minecraft://minecassia.qzz.io:19132">Join Now</a>
+<a href="https://discord.gg/K8AvCY45fS" target="_blank">Discord</a>
+</div>
+
+<div class="ip-box">
+IP: minecassia.qzz.io<br>
+Port: 19132
+</div>
+
+</div>
+
+</body>
+  </html>{
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Minecassia Network",
